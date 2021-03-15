@@ -6,8 +6,9 @@ import { Wrapper } from './Root.style';
 
 import PokemonsProvider from '../providers/PokemonsProvider';
 
-import Searcher from '../components/molecules/Searcher/Searcher';
 import MainTemplate from '../components/templates/MainTemplate/MainTemplate';
+import Searcher from '../components/molecules/Searcher/Searcher';
+import PokeonsBord from '../components/organisms/PokemonsBoard/PokemonsBoard';
 
 function Root() {
   return (
@@ -17,6 +18,7 @@ function Root() {
         <MainTemplate>
           <PokemonsProvider>
             <Searcher />
+            <PokeonsBord />
           </PokemonsProvider>
         </MainTemplate>
       </Wrapper>

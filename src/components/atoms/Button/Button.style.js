@@ -12,10 +12,26 @@ export const StyledButton = styled.button`
   border: none;
   border-radius: 40px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.6s;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.white};
     color: ${({ theme }) => theme.colors.violet};
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.navBtn {
+    line-height: 1.6em;
+  }
+
+  &:disabled {
+    color: gray;
+  }
+
+  &:disabled:hover {
+    background-color: ${({ theme }) => theme.colors.violet};
   }
 `;

@@ -1,5 +1,8 @@
 import Title from '../../atoms/Title/Title';
 import { Wrapper, Header } from './MainTemplate.style';
+import { useQuery, QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
 
 const MainTemplate = ({ children }) => {
   return (
@@ -7,7 +10,7 @@ const MainTemplate = ({ children }) => {
       <Header>
         <Title />
       </Header>
-      {children}
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     </Wrapper>
   );
 };

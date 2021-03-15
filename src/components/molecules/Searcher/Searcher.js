@@ -8,7 +8,7 @@ const Searcher = () => {
     <Wrapper>
       <SearchPokemon>
         <Input />
-        <Button text="search" />
+        <Button text="search" disabled={false} />
       </SearchPokemon>
     </Wrapper>
   );
