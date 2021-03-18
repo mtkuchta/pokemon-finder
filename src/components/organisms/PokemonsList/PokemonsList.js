@@ -1,4 +1,3 @@
-import React, { useContext, useState } from 'react';
 import { Wrapper } from './PokemonsList.style';
 import GetPokemons from '../../../hooks/getPokemons';
 

@@ -1,6 +1,6 @@
 import Title from '../../atoms/Title/Title';
 import { Wrapper, Header } from './MainTemplate.style';
-import { useQuery, QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 const queryClient = new QueryClient();
 

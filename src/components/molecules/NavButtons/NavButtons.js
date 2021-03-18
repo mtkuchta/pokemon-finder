@@ -1,6 +1,4 @@
-import React, { useContext } from 'react';
 import { Wrapper } from './NavButtons.style';
-import { PokemonsContext } from '../../../providers/PokemonsProvider';
 import GetPokemons from '../../../hooks/getPokemons';
 
 import Button from '../../atoms/Button/Button';

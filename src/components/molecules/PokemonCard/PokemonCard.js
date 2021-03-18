@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { Wrapper, Details, PokemonName } from './PokemonCard.style';
 import { useQuery } from 'react-query';
 import { fetchPokemon } from '../../../assets/helpers/dataFetch';
@@ -9,7 +10,8 @@ const PokemonCard = ({ name }) => {
   const { isLoading, error, data } = useQuery(`${name}`, () => fetchPokemon(name));
   const { showModal } = useContext(PokemonsContext);
 
-  if (error) return `Something went wrong: ${error.message}`;
+  if (error) return <Wrapper>Sorry, something went wrong....</Wrapper>;
+
   return (
     <Wrapper onClick={() => showModal(data)}>
       {isLoading ? (
@@ -23,6 +25,10 @@ const PokemonCard = ({ name }) => {
       )}
     </Wrapper>
   );
+};
+
+PokemonCard.propTypes = {
+  name: PropTypes.string,
 };
 
 export default PokemonCard;

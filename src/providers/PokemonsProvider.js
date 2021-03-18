@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useQuery, QueryClient, QueryClientProvider } from 'react-query';
 
 export const PokemonsContext = React.createContext({
   showModal: () => {},

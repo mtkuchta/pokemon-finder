@@ -1,4 +1,5 @@
 import { StyledName, StyledValue, Wrapper } from './PokemonAbility.style';
+import PropTypes from 'prop-types';
 
 const PokemonAbility = ({ ability }) => {
   return (
@@ -8,6 +9,10 @@ const PokemonAbility = ({ ability }) => {
       <StyledValue>Slot: {ability.slot}</StyledValue>
     </Wrapper>
   );
+};
+
+PokemonAbility.propTypes = {
+  ability: PropTypes.object,
 };
 
 export default PokemonAbility;

@@ -1,4 +1,5 @@
 import { Wrapper, StyledTitle, AbilitiesContainer } from './PokemonAbilities.style';
+import PropTypes from 'prop-types';
 
 import PokemonAbility from '../../atoms/PokemonAbility/PokemonAbility';
 
@@ -13,6 +14,10 @@ const PokemonAbilities = ({ pokemon: { abilities } }) => {
       </AbilitiesContainer>
     </Wrapper>
   );
+};
+
+PokemonAbility.propTypes = {
+  sbilities: PropTypes.object,
 };
 
 export default PokemonAbilities;
