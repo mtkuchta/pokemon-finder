@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(3px);
+  animation: showModal 0.5s linear;
 `;
 
 export const PokemonDetails = styled.div`
@@ -34,5 +35,14 @@ export const PokemonName = styled.h1`
   letter-spacing: 2px;
   &::first-letter {
     text-transform: uppercase;
+  }
+
+  @keyframes showModal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 `;

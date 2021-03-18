@@ -21,11 +21,20 @@ export const Wrapper = styled.div`
       opacity: 1;
     }
   }
+  }
+`;
 
-  p {
-    color: ${({ theme }) => theme.colors.yellow};
-    font-size: 1.5em;
-    opacity: 0.01;
-    transition: 0.5s;
+export const Details = styled.p`
+  color: ${({ theme }) => theme.colors.orange};
+  font-size: 1.6em;
+  opacity: 0.01;
+  transition: 0.5s;
+`;
+
+export const PokemonName = styled.h1`
+  color: ${({ theme }) => theme.colors.yellow};
+  letter-spacing: 2px;
+  &::first-letter {
+    text-transform: uppercase;
   }
 `;

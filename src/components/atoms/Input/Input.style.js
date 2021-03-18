@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const PokemonInput = styled.input`
   width: 20%;
+  min-width: 250px;
   font-size: 2.2em;
   line-height: 2.4em;
   font-family: 'Indie Flower';
@@ -12,6 +13,7 @@ export const PokemonInput = styled.input`
   box-shadow: 0px 0px 12px ${({ theme }) => theme.colors.violet};
   padding: 0 15px;
   color: ${({ theme }) => theme.colors.white};
+  letter-spacing: 1px;
 
   &::placeholder {
     color: ${({ theme }) => theme.colors.white};
