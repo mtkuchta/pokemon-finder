@@ -4,6 +4,6 @@ export const fetchPokemons = async (limit, offset) => {
 };
 
 export const fetchPokemon = async (name) => {
-  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`);
   return await res.json();
 };

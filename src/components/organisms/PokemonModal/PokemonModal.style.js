@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   backdrop-filter: blur(3px);
   animation: showModal 0.5s linear;
