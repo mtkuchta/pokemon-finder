@@ -32,7 +32,7 @@ const Searcher = () => {
     <Wrapper>
       <SearchPokemon onSubmit={handlePokemonSearch}>
         <Input value={formValue} onChange={handleFormInput} />
-        <Button type="submit" text="search" disabled={false} />
+        <Button className="search" type="submit" text="search" disabled={false} />
       </SearchPokemon>
       {searchError ? <ErrorMessage message={searchError} /> : ''}
     </Wrapper>

@@ -9,6 +9,23 @@ export const Wrapper = styled.div`
 export const StyledName = styled.h1`
   color: ${({ theme }) => theme.colors.orange};
   text-align: center;
+  font-size: em;
+
+  @media (max-width: 1400px) and (orientation: landscape) {
+    font-size: 3em;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 3em;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    font-size: 2.2em;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 1.6em;
+  }
 `;
 
 export const StyledValue = styled.p`
@@ -16,4 +33,20 @@ export const StyledValue = styled.p`
   font-size: 2em;
   letter-spacing: 2px;
   margin: 5px 0;
+
+  @media (max-width: 1400px) and (orientation: landscape) {
+    font-size: 3em;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 3em;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    font-size: 2.5em;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 1.6em;
+  }
 `;

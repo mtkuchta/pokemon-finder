@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const PokemonInput = styled.input`
   width: 20%;
-  min-width: 250px;
+  min-width: 350px;
   font-size: 2.2em;
   line-height: 2.4em;
   font-family: 'Indie Flower';
@@ -25,5 +25,30 @@ export const PokemonInput = styled.input`
   &:focus {
     outline: none;
     box-shadow: 0px 0px 12px ${({ theme }) => theme.colors.yellow};
+  }
+
+  @media (max-width: 1024px) {
+    width: 40%;
+    font-size: 3em;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    width: 40%;
+    font-size: 2.2em;
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
+    font-size: 1.8em;
+    line-height: 2.2;
+    border-radius: 0;
+  }
+
+  @media (max-width: 700px) and (orientation: landscape) {
+    width: 40%;
+    min-width: 20px;
+    border-radius: 40px;
+    font-size: 1.8em;
+    line-height: 1.8em;
   }
 `;

@@ -6,5 +6,14 @@ export const Wrapper = styled.div`
   height: 70%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+  @media (max-width: 700px) and (orientation: landscape) {
+    height: 50%;
+    flex-grow: 1;
+  }
 `;

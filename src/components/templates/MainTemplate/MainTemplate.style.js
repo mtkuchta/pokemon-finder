@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   background: linear-gradient(-135deg, ${({ theme }) => theme.colors.orange}, ${({ theme }) => theme.colors.violet});
+
+  @media (max-width: 700px) {
+    justify-content: space-evenly;
+  }
 `;
 
 export const Header = styled.header`
@@ -15,4 +19,8 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 700px) {
+    height: 10%;
+  }
 `;

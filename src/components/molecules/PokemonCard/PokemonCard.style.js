@@ -21,6 +21,29 @@ export const Wrapper = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 700px) {
+    width: 95%;
+    height: 14%;
+    margin: 3px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px ${({ theme }) => theme.colors.yellow};
+    flex-direction: row;
+
+    img {
+      height: 95%;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  @media (max-width: 700px) and (orientation: landscape) {
+    width: 45%;
+    height: 25%;
+    align-items: center;
+    border-radius: 10px;
   }
 `;
 
@@ -32,9 +55,23 @@ export const Details = styled.p`
 `;
 
 export const PokemonName = styled.h1`
+  font-size: 2.2em;
   color: ${({ theme }) => theme.colors.yellow};
   letter-spacing: 2px;
   &::first-letter {
     text-transform: uppercase;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 1.6em;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 2em;
+    padding: 0;
   }
 `;

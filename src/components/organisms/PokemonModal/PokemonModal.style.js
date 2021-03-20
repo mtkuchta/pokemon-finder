@@ -7,10 +7,19 @@ export const Wrapper = styled.div`
   left: 0;
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(3px);
   animation: showModal 0.5s linear;
+
+  @keyframes showModal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export const PokemonDetails = styled.div`
@@ -23,6 +32,18 @@ export const PokemonDetails = styled.div`
   background-color: ${({ theme }) => theme.colors.violet};
   border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.colors.yellow};
+
+  @media (max-width: 1024px) {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  @media (max-width: 1400px) and (orientation: landscape) {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
 `;
 
 export const PokemonName = styled.h1`
@@ -37,12 +58,26 @@ export const PokemonName = styled.h1`
     text-transform: uppercase;
   }
 
-  @keyframes showModal {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  @media (max-width: 1400px) and (orientation: landscape) {
+    font-size: 5em;
+    padding: 20px 0;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 5em;
+    padding: 20px 0;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    font-size: 4em;
+    padding: 10px 0;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 2.4em;
+    padding: 7px 0;
+  }
+  @media (max-width: 700px) and (orientation: landscape) {
+    font-size: 2em;
   }
 `;

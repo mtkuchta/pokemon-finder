@@ -6,7 +6,7 @@ import PokemonCard from '../../molecules/PokemonCard/PokemonCard';
 const PokemonsList = () => {
   const {
     query: { isLoading, data },
-  } = GetPokemons(12);
+  } = GetPokemons();
 
   if (isLoading) return 'Loading';
 
