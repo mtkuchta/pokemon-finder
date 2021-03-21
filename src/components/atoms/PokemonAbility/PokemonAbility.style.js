@@ -4,6 +4,11 @@ export const Wrapper = styled.div`
   width: 30%;
   height: 100%;
   margin: 0 10px;
+
+  @media (max-width: 700px) {
+    width: 28%;
+    margin: 5px;
+  }
 `;
 
 export const StyledName = styled.h1`
@@ -25,6 +30,7 @@ export const StyledName = styled.h1`
 
   @media (max-width: 700px) {
     font-size: 1.6em;
+    margin: 5px;
   }
 `;
 

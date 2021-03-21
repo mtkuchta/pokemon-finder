@@ -50,5 +50,6 @@ export const AbilitiesContainer = styled.div`
 
   @media (max-width: 700px) {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 `;
