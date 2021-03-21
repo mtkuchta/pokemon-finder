@@ -20,6 +20,11 @@ export const StyledButton = styled.button`
     border-color: ${({ theme }) => theme.colors.orange};
   }
 
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
   @media (max-width: 1024px) {
     width: 60px;
     height: 60px;
