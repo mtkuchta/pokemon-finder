@@ -18,8 +18,8 @@ The application is full responsive. You can find the application demo [here](htt
 
 To run this project, install it locally using npm:
 
-$ cd ../lorem
-$ npm install
+$ cd ../lorem  
+$ npm install  
 $ npm start
 
 test
