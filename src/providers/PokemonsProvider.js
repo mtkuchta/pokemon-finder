@@ -19,14 +19,8 @@ const PokemonsProvider = ({ children }) => {
     setPokemon(null);
   };
 
-  const handlePokemonSearch = async (e) => {
-    e.preventDefault();
-  };
-
   return (
-    <PokemonsContext.Provider
-      value={{ showModal, closeModal, handlePokemonSearch, pokemon, setPokemon, searchError, setSearchError }}
-    >
+    <PokemonsContext.Provider value={{ showModal, closeModal, pokemon, setPokemon, searchError, setSearchError }}>
       {children}
     </PokemonsContext.Provider>
   );

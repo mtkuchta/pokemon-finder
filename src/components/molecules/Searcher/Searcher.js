@@ -30,7 +30,7 @@ const Searcher = () => {
 
   return (
     <Wrapper>
-      <SearchPokemon onSubmit={handlePokemonSearch}>
+      <SearchPokemon onSubmit={handlePokemonSearch} data-testid="search-form">
         <Input value={formValue} onChange={handleFormInput} />
         <Button className="search" type="submit" text="search" disabled={false} />
       </SearchPokemon>
