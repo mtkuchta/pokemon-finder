@@ -9,6 +9,7 @@ The application is full responsive. You can find the application demo [here](htt
 
 ## Technologies
 
+- Node 12.18.4,
 - React 17.0.1,
 - React Query 3.12.1,
 - Styled Components 5.2.1,
